@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>IPS4M - Parking Sistem</title>
+
+        <!-- font awesome cdn link  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+        <!-- custom css file link  -->
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="./js/historico.js"></script>
+
+    </head>
+    
+    <body>    
+    <!-- header section starts  -->
+        <header>
+            
+            <a href="#" class="logo">IPS4M <span>- Parking SistemApp</a>
+            
+            <input type="checkbox" id="menu-bar">
+            <label for="menu-bar" class="fas fa-bars"></label>
+
+            <nav class="navbar">
+                <a href="index.html">Inicio |</a>
+                <a href="#ENTRADA">Entrada |</a>
+                <a href="#PAGAMENTO">Pagamento |</a>
+                <a href="#PREMIUM">Premium |</a>
+                <a href="#SAIDA">Saída |</a>
+                <a href="historico.html">Historico |</a>
+                <a href="suporte.html">Suporte</a>
+            </nav>
+        </header>
+    <!-- header section ends -->
+
+    
+    <!-- contact section starts  PREMIUM --> 
+        <section class="contact" id="PREMIUM">
+            <div class="image">
+                <img src="images/logo2.png" alt="">
+            </div>
+
+            <form action="">
+                <h1 class="heading">Histórico de vagas</h1>
+                <h1 class ="heading2"> A cada 5 reservas a 6ª sai por nossa conta!</h1>
+
+                    <div class="grid-container">
+                    <div class="grid-item">
+                        <img id="reserva1" src="images/reservanok.png" alt="">
+                        <p>1ª Reserva</p>
+                    </div>    
+                    <div class="grid-item">
+                        <img id="reserva2" src="images/reservanok.png" alt="">
+                        <p>2ª Reserva</p>
+                    </div>
+ 
+                    <div class="grid-item">
+                        <img id="reserva3" src="images/reservanok.png" alt="">
+                        <p>3ª Reserva</p>
+                    </div>
+                    <div class="grid-item">
+                        <img id="reserva4" src="images/reservanok.png" alt="">
+                        <p>4ª Reserva</p>
+                    </div>  
+                    <div class="grid-item">            
+                        <img id="reserva5" src="images/reservanok.png" alt="">
+                        <p>5ª Reserva</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="images/reservapremium.png" alt="">
+                        <p>6ª Reserva</p>
+                    </div>
+                    <div>   
+
+                        
+                    </div>
+                    </div>
+                    <div class="grid-item">   
+                        <a class="btn" onclick="verificarCpf()">Inserir CPF</a>
+                        <div class="inputBox">
+                            <input type="text" id="verificarCpf" required placeholder="                 xxx.xxx.xxx-xx">
+                            <label>CPF:</label>
+                        </div>
+                    </div>
+            </form>
+        </section>
+    <!-- contact section edns -->
+
+
+    <!-- footer section starts  -->
+        <div class="footer">
+            <div class="box-container">
+
+                <div class="box">
+                    <h3>Sobre Nós</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet pariatur rerum consectetur architecto ad tempora blanditiis quo aliquid inventore a.</p>
+                </div>
+
+                <div class="box">
+                    <h3>Links Rápidos</h3>
+                    <a href="#">Inicio</a>
+                    <a href="#">Características</a>
+                    <a href="#">Contato</a>
+                </div>
+
+                <div class="box">
+                    <h3>Nos Siga</h3>
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                </div>
+
+                <div class="box">
+                    <h3>Informações de Contato</h3>
+                    <div class="info">
+                        <i class="fas fa-phone"></i>
+                        <p> (19) 9 8854-0918 <br> (19) 9 0123-4567 </p>
+                    </div>
+                    <div class="info">
+                        <i class="fas fa-envelope"></i>
+                        <p> ips4m.suporte@gmail.com </p>
+                    </div>
+                    <div class="info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p> Campinas, São Paulo - 00009-001 </p>
+                    </div>
+                </div>
+            </div>
+            <h1 class="credit"> &copy; copyright 2021 | IPS4M Sistem </h1>
+        </div>
+    <!-- footer section ends -->
+    </body>
+</html>

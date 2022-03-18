@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>IPS4M - Parking Sistem</title>
+
+        <!-- font awesome cdn link  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+        <!-- custom css file link  -->
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="./js/index.js"></script>
+        
+        
+    </head>
+    
+    <body>    
+    <!-- header section starts  -->
+        <header>
+            
+            <a href="#" class="logo">IPS4M <span>- Parking SistemApp</a>
+            
+            <input type="checkbox" id="menu-bar">
+            <label for="menu-bar" class="fas fa-bars"></label>
+
+            <nav class="navbar">
+                <a href="index.html">Inicio |</a>
+                <a href="#ENTRADA">Entrada |</a>
+                <a href="#PAGAMENTO">Pagamento |</a>
+                <a href="#PREMIUM">Premium |</a>
+                <a href="#SAIDA">Saída |</a>
+                <a href="historico.html">Historico |</a>
+                <a href="suporte.html">Suporte</a>
+            </nav>
+        </header>
+    <!-- header section ends -->
+
+    <!-- home section starts  -->
+        <section class="home" id="home">
+            <div class="content">
+                <h3>Muito mais <span>Conforto, Praticidade e Segurança</span> para você e sua família!</h3>
+                <p>Sistema de estacionamento inteligente.</p>
+                <a href="#PREMIUM" class="btn">Cadastre-se!</a>
+            </div>
+
+            <div class="image">
+                <img src="images/logo2.png" alt="">
+            </div>
+        </section>
+    <!-- home section ends -->
+
+    <!-- features section starts  -->
+        <section class="features" id="features">
+            <h1 class="heading"> Recursos do Estacionamento </h1>
+
+            <div class="box-container">
+                <div class="box">
+                    <img src="images/f-icon1.png" alt="">
+                    <h3>Sistema de Vagar por Andar</h3>
+                    
+                    <p>Sistema que contabiliza e exibe a quantidade de vagas ocupadas ou disponiveis por andar.</p>
+                    <a href="saibamais.html" class="btn">Ler mais</a>
+                </div>
+
+                <div class="box">
+                    <img src="images/f-icon2.png" alt="">
+                    <h3>Venha ser premium e garanta todos os benefícios!</h3>
+                    <p>Sendo um Parking Premium a cada 5 reservas a 6ª sai por nossa conta! Você também recebe desconto toda vez que realizar um pagamento!</p>
+                    <a href="saibamais.html" class="btn">Ler mais</a>
+                </div>
+            </div>
+        </section>
+    <!-- features section ends -->
+
+        <!-- features section starts  -->
+        <section class="contact" id="STATUS">
+            <div class="imageentrada">
+                <img src="images/status.png" alt="">
+            </div>
+
+            <form action="">
+                <h1 class="heading"> Status do Estacionamento </h1>
+                <div class="descricao">
+                    <h2>ANDARES:</h2>
+                    
+                        <div class="descricao">
+                            <h2>
+                                ANDAR 1
+                            </h2>
+                            <p>Livre: <Label id="andar1Livre1">50</Label></p>
+                            <p>Ocupada: <Label id="andar1Ocupado1">00</Label></p>
+                            
+                        </div>
+                        <div class="descricao">
+                            <h2>
+                                ANDAR 2
+                            </h2>
+                            
+                            <p>Livre: <Label id="andar2Livre2">50</Label></p>
+                            <p>Ocupada: <Label id="andar2Ocupado2">00</Label></p>
+                        </div>
+                        <div class="descricao">
+                            <h2>
+                                ANDAR 3
+                            </h2>
+                        
+                            <p>Livre: <Label id="andar3Livre3">50</Label></p>
+                            <p>Ocupada: <Label id="andar3Ocupado3">00</Label></p>
+                        </div>
+                        
+                </div>
+                <a class="btn" onclick="atualizarLotacao()">Atualizar</a>
+            </form>
+        </section>
+    <!-- features section ends -->
+
+    <!-- newsletter  -->
+        <div class="newsletter">
+
+            <h3>Se inscreva para novidades!</h3>
+            <p>Para receber novidades, atualizações e ficar por dentro de tudo o que acontece sobre o IPS4M (inteligent Parking Sistem For Mall) inscreva o seu e-mail.</p>
+            <form action="">
+                <input type="email" placeholder="Digite seu E-Mail">
+                <input type="submit" value="Inscrever-se">
+            </form>
+
+        </div>
+    <!-- newsletter  -->
+    
+    <!-- contact section starts  PREMIUM --> 
+        <section class="contact" id="PREMIUM">
+            <div class="image">
+                <img src="images/contact-img.png" alt="">
+            </div>
+
+
+            <form>
+                <h1 class="heading">Torne-se premium aqui!</h1>
+
+                <div class="inputBox">
+                    <input type="email" required name="email" id="email">
+                    <label>E-mail</label>
+                </div>
+
+                <div class="inputBox">
+                    <input type="email" required name="emailConf" id="emailConf">
+                    <label>Confirmar e-mail</label>
+                </div>
+
+                <div class="inputBox">
+                    <input type="password" required name="senha" id="senha">
+                    <label>Senha</label>
+                </div>
+
+                <div class="inputBox">
+                    <input type="password" required name="senhaConf" id="senhaConf">
+                    <label>Confirmar Senha</label>
+                </div>
+
+                <div class="inputBox">
+                    <input type="text" required placeholder="         xxx.xxx.xxx-xx" name="cpf" id="cpfCliente">
+                    <label>CPF</label>
+                </div>
+
+                <a class="btn" onclick="cadastrarUsuario()">Cadastrar</a>
+            </form>
+        </section>
+    <!-- contact section edns -->
+
+        <!-- contact section starts ENTRADA -->
+        <section class="contact" id="ENTRADA">
+            
+            <form action="">
+                <h1 class="heading">ENTRADA</h1>
+                <h1 class ="heading2"> Seja bem vindo!</h1>
+                <div class="BoxToken">
+                    
+                    <div class="BoxTokenInterna">
+                        <form action="">
+                            <div class="BoxTokenInterna2">
+                                <p id="TextoEntrada">Seja bem vindo!
+                                    <br>
+                                     - Para entrar, aperte o botão de emissão de ticket.
+                                    <br>
+                                     - Caso tenha alguma dificuldade, solicite o suporte.
+                                </p>
+
+                                <div class="imageEntrada">
+                                    <img src="images/Estacionamentoplaca.png" alt="">
+                                </div>
+                            </div>
+                    </div>     
+
+                            <a class="btn" onclick="emitirTicket()">Emitir Ticket</a>
+                        
+                           <label id="mostraCodigo" class="grid-item">--</label>
+                            
+                            <a href="suporte.html" class="btn">Solicitar Suporte</a>
+                        </form>
+                </div>
+            </form>
+        </section>
+    <!-- contact section edns -->
+
+        <!-- contact section starts SAÍDA -->
+        <section class="contact" id="SAIDA">
+            
+            <form action="">
+                <h1 class="heading">SAÍDA</h1>
+                <h1 class ="heading2"> Obrigado e volte sempre!</h1>
+                <div class="BoxToken">
+                    
+                    <div class="BoxTokenInterna">
+                        <form action="">
+                            <div class="BoxTokenInterna2">
+                                <p> - Insira o ticket abaixo e aguarde a liberação do pagamento.
+                                    <br>
+                                     - Caso tenha alguma dificuldade, solicite o suporte.
+                                </p>
+                               
+                                <div class="imageEntrada">
+                                    <img src="images/Estacionamentoplaca.png" alt="">
+                                </div>
+                            </div>
+                    </div>     
+                    <div class="grid-item">   
+                        
+                        <div class="inputBox">
+                            <input type="text" id="codigoTicketLibera" required placeholder="                 xxx-xxx">
+                            <label>Cód:</label>
+                        </div>
+                    </div>
+                        <a href="suporte.html" class="btn">Solicitar Suporte</a>
+                        <a class="btn" onclick="liberarTicket()">Inserir Ticket</a>
+                        </form>
+                </div>
+            </form>
+        </section>
+    <!-- contact section edns -->
+
+            <!-- contact section starts PAGAMENTO -->
+            <section class="contact" id="PAGAMENTO">
+
+    
+                <form>
+                    <h1 class="heading">PAGAMENTO</h1>
+                    <h1 class ="heading2"> Obrigado pela preferência!</h1>
+
+                        <div class="grid-container">
+                        <div class="grid-item">
+                            
+                            <p>Insira o ticket e aguarde a liberação do pagamento.</p>
+                            <p>Caso tenha alguma dificuldade, solicite o suporte.</p>
+                        </div>    
+                        <div class="grid-item2">
+                            <p class="fonte">Coloque o seu CPF para o aumento de sua fidelidade.</p>
+                            <p> CPF: <input id="cpf" type="text" placeholder="         xxx.xxx.xxx-xx"></p>
+                        </div>
+                        <div class="grid-item">
+                            <p>TABELA DE PREÇOS:</p>
+                            <p>Primeira hora: R$ 10,00</p>
+                            <p>Demais horas: R$ 10,00</p>
+                            <p>% de desconto: 00,00%</p>
+                        </div>  
+                        <div class="grid-item">
+                            <p>Hora entrada:</p>
+                        </div>
+                        <div class="grid-item">
+                            <label id="registro">00</label>
+                            <label>h:</label>
+                            <label id="registroMin">00</label>
+                            <label>m</label>
+                        </div>  
+                        <div class="grid-item">
+                            <p>Shopping Center</p>
+                            <a href="suporte.html" class="btn">Solicitar Suporte</a>
+                            
+                        </div>
+                        <div class="grid-item">            
+                            <p>Horas acumuladas:</p>
+                        </div>
+                        <div class="grid-item">
+                            <label id="registroAc">00</label>
+                            <label>h</label>
+                            <!-- <label id="registroAcM">00</label>
+                            <label>m</label> -->
+                        </div>
+                        <div class="grid-item">   
+                            <!-- <input type="submit" class="btn" value="Pagar"> -->
+                            <a class="btn" onclick="pagarTicket()">Pagar</a>
+                            <!-- <input type="submit" class="btn" value="Buscar"> -->
+                            <a class="btn" onclick="buscarCodigo()">Buscar</a>
+                            <div class="inputBox">
+                                <input type="text" id="codigoTicket" required placeholder="                 xxx-xxx">
+                                <label>Cód:</label>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <p>Total a pagar:</p>
+                        </div>
+                        <div class="grid-item">
+                            <label>R$</label>
+                            <label id="pagoReal">00</label>
+                            <label>,</label>
+                            <label id="pagoCentavo">00</label>
+                            <label>Reais</label>
+                        </div>
+                        </div>
+                        
+                </form>
+            </section>
+        <!-- contact section edns -->
+
+    <!-- footer section starts  -->
+        <div class="footer">
+            <div class="box-container">
+
+                <div class="box">
+                    <h3>Sobre Nós</h3>
+                    <p>Sobre nós</p>
+                </div>
+
+                <div class="box">
+                    <h3>Links Rápidos</h3>
+                    <a href="#">Inicio</a>
+                    <a href="#">Características</a>
+                    <a href="#">Contato</a>
+                </div>
+
+                <div class="box">
+                    <h3>Nos Siga</h3>
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                </div>
+
+                <div class="box">
+                    <h3>Informações de Contato</h3>
+                    <div class="info">
+                        <i class="fas fa-phone"></i>
+                        <p> (19) 9 8854-0918 <br> (19) 9 0123-4567 </p>
+                    </div>
+                    <div class="info">
+                        <i class="fas fa-envelope"></i>
+                        <p> ips4m.suporte@gmail.com </p>
+                    </div>
+                    <div class="info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p> Campinas, São Paulo - 00009-001 </p>
+                    </div>
+                </div>
+            </div>
+            <h1 class="credit"> &copy; copyright 2021 | IPS4M Sistem </h1>
+        </div>
+    <!-- footer section ends -->
+    </body>
+</html>
