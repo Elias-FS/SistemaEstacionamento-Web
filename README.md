@@ -8,7 +8,7 @@
 
 
 <div align="center">
-<img src="![LogoIPS4M](https://user-images.githubusercontent.com/80833558/158999163-d334219e-8f4f-48f0-ac1b-b21a4a79ba6b.png)
+<img src="https://github.com/Elias-FS/Imagens-Repositorios/blob/main/IPS4M/LogoIPS4M.png
 />
 </div>
 
