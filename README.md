@@ -13,7 +13,7 @@
 
 
 <p align="center">
-  Olá, que bom ver você por aqui. <br>Meu nome é Elias e fiz junto com meu colega Emílio esse projeto que <strong>representa um sistema de Estacionamento para shoppings</strong>! <br> Nós somos <strong>desenvolvedores</strong> e desenvolvemos esse projeto para nos desafiarmos e 
+  Olá, que bom ver você por aqui. <br>Meu nome é Elias e fiz junto com meu colega <a href="https://github.com/emiliobiasi">Emílio</a> esse projeto que <strong>representa um sistema de Estacionamento para shoppings</strong>! <br> Nós somos <strong>desenvolvedores</strong> e desenvolvemos esse projeto para nos desafiarmos e 
   colocar em prática alguns conhecimentos aprendidos em sala de aula, como também validar o trabalho para a matéria <strong>Projeto Integrador II</strong>, espero que goste!
 
 
