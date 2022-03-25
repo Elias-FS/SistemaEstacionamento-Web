@@ -8,8 +8,7 @@
 
 
 <div align="center">
-<img src="https://github.com/Elias-FS/Imagens-Repositorios/blob/main/IPS4M/LogoIPS4M.png
-/>
+<img src="https://github.com/Elias-FS/Imagens-Repositorios/blob/main/IPS4M/LogoIPS4M.png"/>
 </div>
 
 
